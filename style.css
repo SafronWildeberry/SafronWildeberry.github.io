@@ -1,0 +1,18 @@
+/*needs to be in same folder as html script*/
+
+body {
+    /*background-color: blue;*/
+}
+
+p {
+    /*color: white;*/
+
+    /*makes two paragraph tags on the same line*/
+    /*display: inline;*/
+    /*makes the text dissapier, good for animations*/
+    /*display: none;*/
+}
+
+h1 {
+    margin-bottom: 50px;
+}
