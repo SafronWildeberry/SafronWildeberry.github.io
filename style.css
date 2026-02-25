@@ -5,8 +5,10 @@ body {
 }
 
 p {
+    /*changes the color of the text */
     /*color: white;*/
-
+    color: purple;
+    background-color: black;
     /*makes two paragraph tags on the same line*/
     /*display: inline;*/
     /*makes the text dissapier, good for animations*/

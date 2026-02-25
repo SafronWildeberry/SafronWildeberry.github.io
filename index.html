@@ -12,6 +12,14 @@
         
         <!-- puts this in the tab -->
         <title>Isaac Davidson</title>
+
+        <style>
+            p:hover {
+                background-color: blue;
+                color: red;
+            }
+        </style>
+
     </head>
 
     <body>
@@ -20,6 +28,7 @@
             <h1>Word</h1>
             </div>
             <!-- h1 goes up to h6 -->
+            <!-- this is a break tag -->
             <!-- <br> -->
             <!-- <a href="URL"> this is link</a> -->
             <!-- This is a comment -->
@@ -31,13 +40,16 @@
                 </div>
 
                 <div class="col-md-6">
-                <p>this is another thing that makes a paragraph</p>
+                    <!-- this makes the html script ignore the stylesheet and use this style instead -->
+                    <p style="color: green; background-color: yellow;">
+                        this is another thing that makes a paragraph
+                    </p>
                 </div>
 
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <table>
+                    <table>                           
                         <tr><th>Days of the Week</th></tr>
                         <tr><td>Monday</td></tr>
                         <tr><td>Tuesday</td></tr>
@@ -58,7 +70,8 @@
                     </ol>
                 </div>
                 <div class="col-md-4">
-                    <ul>
+                    <!-- this makes the html script ignore the stylesheet and use this style instead -->
+                    <ul style="background-color: red; color: blue;">
                         <li>Try</li>
                         <li>Attempt</li>
                         <li>Poder</li>
@@ -70,6 +83,7 @@
             <!-- can also add references from file explorer -->
 
         </div>
+
     </body>
 
 </html>
