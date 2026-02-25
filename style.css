@@ -1,4 +1,6 @@
 /*needs to be in same folder as html script*/
+/*all of these set the default styles for the different tags in HTML, but they can be overridden by inline or internal stylesheets
+those stylesheets are located inside the HTML script */
 
 body {
     /*background-color: blue;*/

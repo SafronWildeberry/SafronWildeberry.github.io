@@ -13,6 +13,8 @@
         <!-- puts this in the tab -->
         <title>Isaac Davidson</title>
 
+        <!-- this is an internal CSS stylesheet that will override what's on the CSS file -->
+        <!-- this one in particular is changing the color of the text and background when you hover over it -->
         <style>
             p:hover {
                 background-color: blue;
@@ -41,6 +43,8 @@
 
                 <div class="col-md-6">
                     <!-- this makes the html script ignore the stylesheet and use this style instead -->
+                    <!-- the internal stylesheet above will not work on this paragraph because it has an inline style, which overrides -->
+                    <!-- internal and external stylesheets -->
                     <p style="color: green; background-color: yellow;">
                         this is another thing that makes a paragraph
                     </p>
