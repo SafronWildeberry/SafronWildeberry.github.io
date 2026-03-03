@@ -1,6 +1,7 @@
 /*needs to be in same folder as html script*/
 /*all of these set the default styles for the different tags in HTML, but they can be overridden by inline or internal stylesheets
 those stylesheets are located inside the HTML script */
+/* You can use one CSS script for mutiple HTML scripts */
 
 body {
     /*background-color: blue;*/
@@ -15,6 +16,10 @@ p {
     /*display: inline;*/
     /*makes the text dissapier, good for animations*/
     /*display: none;*/
+    /* This tells the code which animation it will use */
+    animation-name: example;
+    /* This tells it how long the animation will be */
+    animation-duration: 5s;
 }
 
 /* when the screen size is less than or equal to 768px, the styles will be activated */
@@ -26,6 +31,13 @@ p {
         background-color: white;
         text-decoration: underline;
     }
+}
+
+/* This sets up an animation, this animation can be used in any of the other elements in this stylesheet */
+/* once this animation is done the cascading will continue, so this doesn't override any internal or inline stylesheets */
+@keyframes example {
+    from {background-color: royalblue;}
+    to {background-color: indigo;}
 }
 
 h1 {
