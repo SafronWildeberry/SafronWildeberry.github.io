@@ -17,6 +17,17 @@ p {
     /*display: none;*/
 }
 
+/* when the screen size is less than or equal to 768px, the styles will be activated */
+/* this acts like an exteral stylesheet, so it will not override the internal, or inline stylesheets */
+@media (max-width: 768px){
+    p{
+        font-size: 20px;
+        color: orange;
+        background-color: white;
+        text-decoration: underline;
+    }
+}
+
 h1 {
     margin-bottom: 50px;
 }
