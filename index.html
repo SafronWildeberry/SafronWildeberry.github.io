@@ -15,12 +15,14 @@
 
         <!-- this is an internal CSS stylesheet that will override what's on the CSS file -->
         <!-- this one in particular is changing the color of the text and background when you hover over it -->
-        <style>
+
+        <!-- This was replaced by an id selector in the external stylesheet the id "paragraph1"-->
+        <!-- <style>
             p:hover {
                 background-color: blue;
                 color: red;
             }
-        </style>
+        </style> -->
 
     </head>
 
@@ -38,14 +40,20 @@
                 
                 <!-- col-md-# all # needs to add to 12 -->
                 <div class="col-md-6">
-                <p>hello world</p>
+                <p id="paragraph1">
+                    hello world
+                </p>
                 </div>
 
                 <div class="col-md-6">
                     <!-- this makes the html script ignore the stylesheet and use this style instead -->
                     <!-- the internal stylesheet above will not work on this paragraph because it has an inline style, which overrides -->
                     <!-- internal and external stylesheets -->
-                    <p style="color: green; background-color: yellow;">
+
+                    <!-- This was an old inline stylesheet that was replaced by an external by using the id selector -->
+                    <!-- the id is paragraph2 -->
+                    <!-- <p style="color: green; background-color: yellow;"> -->
+                    <p id="paragraph2">
                         this is another thing that makes a paragraph
                     </p>
                 </div>
@@ -53,7 +61,8 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <table>                           
+                    <table> 
+                        <!-- tr stands for table row, td stand for table data, and th stands for table header -->
                         <tr><th>Days of the Week</th></tr>
                         <tr><td>Monday</td></tr>
                         <tr><td>Tuesday</td></tr>
@@ -107,7 +116,9 @@
                         </tr>
                     </table>
                 </div>
+                <!-- responsive makes the table scrollable when the screen cuts off the table -->
                 <div class="table-responsive col-md-4">
+                    <!-- the class table adds lines to the table -->
                     <table class="table">
                         <tr>
                             <th>Company</th>
